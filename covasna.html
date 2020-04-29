@@ -8,10 +8,11 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" />
   </script>
 
-  <script src="./scripts/menu.js"></script>
+
   <!-- <link rel="stylesheet" href="flexboxgrid.css"/> -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="regionCard.css">
+  <link rel="stylesheet" href="regionCard.css"/>
+  <link rel="stylesheet" href="graph.css" />
   <style>
     .header {
       padding: 20px;
@@ -57,55 +58,11 @@
     </div>
   </div>
 
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="iasi.html"><h1>Iasi</h1></a>
-
-    </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="vaslui.html"><h1>Vaslui</h1></a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="galati.html"><h1>Galati</h1></a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="vrancea.html"><h1>Vrancea</h1></a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="bacau.html"><h1>Bacau</h1></a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="neamt.html"><h1>Neamt</h1></a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="botosani.html"><h1>Botosani</h1></a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="suceava.html"><h1>Suceava</h1></a>
-    </div>
-  </div>
+  <canvas id="myChart"></canvas>
+  
+  <script src="./scripts/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="./scripts/makeChart.js"></script>
 </body>
 
 </html>

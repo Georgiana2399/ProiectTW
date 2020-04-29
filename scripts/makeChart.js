@@ -5,15 +5,28 @@ var chart = new Chart(ctx, {
 
   // The data for our dataset
   data: {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ],
     datasets: [
       {
         label: "SOMERI IASI", // TITLUL GRAFICULUI
         backgroundColor: "rgb(255, 99, 132)",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 10, 5, 2, 20, 30, 45]
-      }
-    ]
+        data: [0, 10, 5, 2, 20, 30, 45, 4, 7, 9, 11, 12],
+      },
+    ],
   },
-  options: {}
+  options: {},
 });
