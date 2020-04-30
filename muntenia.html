@@ -1,119 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RUnDA</title>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RUnDA</title>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" />
-  </script>
+    <script src="./scripts/menu.js"></script>
+    <!-- <link rel="stylesheet" href="flexboxgrid.css"/> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="regionCard.css" />
+    <style>
+      .header {
+        padding: 20px;
+        background: #1abc9c;
+        color: white;
+        text-align: left;
+        font-size: 100%;
+        display: inline-block;
+        width: 100vw;
+      }
 
-  <script src="./scripts/menu.js"></script>
-  <!-- <link rel="stylesheet" href="flexboxgrid.css"/> -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="regionCard.css">
-  <style>
-    .header {
-      padding: 20px;
-      background: #1abc9c;
-      color: white;
-      text-align: left;
-      font-size: 100%;
-      display: inline-block;
-      width: 100vw;
-    }
+      .header h1,
+      p {
+        text-align: center;
+        font-size: 150%;
+        display: inline;
+      }
 
-    .header h1,
-    p {
-      text-align: center;
-      font-size: 100%;
-      display: inline;
-    }
+      menu > a:hover {
+        color: red;
+      }
 
-    menu>a:hover {
-      color: red;
-    }
-  </style>
-</head>
+      /* unvisited link */
+      a:link {
+        color: red;
+      }
 
-<body>
-  <!-- HEADER -->
-  <div class="header">
-    <div id="content">
-      <span class="slide">
-        <a href="#" onclick="openSlideMenu()"> <i class="fas fa-bars"></i></a>
-      </span>
-      <h1>RUnDA</h1>
-      <p>Romanian Unemployment Data Visualizer</p>
-      <div id="menu" class="nav">
-        <a href="#" class="close" onclick="closeSlideMenu()">
-          <i class="fas fa-times"></i>
-        </a>
-        <a href="#">Nivel de educatie</a>
-        <a href="#">Varsta</a>
-        <a href="#">Mediul</a>
-        <a href="#">Perioada de timp</a>
+      /* mouse over link */
+      a:hover {
+        color: black;
+      }
+
+      /* selected link */
+      a:active {
+        color: rgb(167, 11, 11);
+      }
+
+      ul {
+        font-size: 120%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1abc9c;
+      }
+
+      li {
+        float: left;
+        border-right: 1px solid #1abc9c;
+      }
+
+      li:last-child {
+        border-right: none;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: white;
+      }
+
+      .active {
+        background-color: #1abc9c;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div id="content">
+        <span class="slide">
+          <a href="#" onclick="openSlideMenu()"> <i class="fas fa-bars"></i></a>
+        </span>
+        <h1>RUnDA</h1>
+        <h1>Romanian Unemployment Data Visualizer</h1>
+        <div id="menu" class="nav">
+          <a href="#" class="close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+          </a>
+          <a href="#">Nivel de educatie</a>
+          <a href="#">Varsta</a>
+          <a href="#">Mediul</a>
+          <a href="#">Perioada de timp</a>
+        </div>
       </div>
     </div>
-  </div>
+    <ul>
+      <li><a href="index.html"> Regiunile Romaniei: </a></li>
+      <li><a href="moldova.html"> Moldova </a></li>
+      <li><a href="oltenia.html"> Oltenia </a></li>
+      <li><a href="dobrogea.html"> Dobrogea </a></li>
+      <li><a href="transilvania.html"> Transilvania </a></li>
+    </ul>
 
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="arges.html"><h1>Arges</h1></a>
-
+    <div class="card">
+      <img src="./res/pics/arges.png" alt="Pics" />
+      <div class="container">
+        <a href="arges.html"><h1>Arges</h1></a>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="dambovita.html"><h1>Dambovita</h1></a>
+    <div class="card">
+      <img src="./res/pics/dambovita.jpg" alt="Pics" />
+      <div class="container">
+        <a href="dambovita.html"><h1>Dambovita</h1></a>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="teleorman.html"><h1>Teleorman</h1></a>
+    <div class="card">
+      <img src="./res/pics/teleorman.jpg" alt="Pics" />
+      <div class="container">
+        <a href="teleorman.html"><h1>Teleorman</h1></a>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="prahova.html"><h1>Prahova</h1></a>
+    <div class="card">
+      <img src="./res/pics/prahova.jpg" alt="Pics" />
+      <div class="container">
+        <a href="prahova.html"><h1>Prahova</h1></a>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="bucuresti.html"><h1>Bucuresti</h1></a>
+    <div class="card">
+      <img src="./res/pics/bucuresti.jpg" alt="Pics" />
+      <div class="container">
+        <a href="bucuresti.html"><h1>Bucuresti</h1></a>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="buzau.html"><h1>Buzau</h1></a>
+    <div class="card">
+      <img src="./res/pics/buzau.jpg" alt="Pics" />
+      <div class="container">
+        <a href="buzau.html"><h1>Buzau</h1></a>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="ialomnita.html"><h1>Ialomnita</h1></a>
+    <div class="card">
+      <img src="./res/pics/ialomnita.jpg" alt="Pics" />
+      <div class="container">
+        <a href="ialomnita.html"><h1>Ialomnita</h1></a>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="" />
-    <div class="container">
-      <a href="calarasi.html"><h1>Calarasi</h1></a>
+    <div class="card">
+      <img src="./res/pics/calarasi.jpg" alt="Pics" />
+      <div class="container">
+        <a href="calarasi.html"><h1>Calarasi</h1></a>
+      </div>
     </div>
-  </div>
-<div class="card">
-    <img src="" />
-    <div class="container">
+    <div class="card">
+      <img src="./res/pics/braila.jpg" alt="Pics" />
+      <div class="container">
         <a href="braila.html">
-            <h1>Braila</h1>
+          <h1>Braila</h1>
         </a>
+      </div>
     </div>
-</div>
-</body>
-
+  </body>
 </html>
