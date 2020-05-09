@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
     <title>RUnDA</title>
 </head>
+
+
 
 <body>
 
@@ -15,16 +18,17 @@
 
         <span class="logo">RUnDA</span>
         <img class="logo-image" src="pics/logo.png" alt="logo">
-        <div class="header-right">
+        <div class="navbar" id="myNavbar">
             <a href="acasa.html">Acasa</a>
             <a href="somaj.html">Despre somaj</a>
             <a href="statistica.html">Statistica Nationala</a>
             <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </div>
     <div id="demo" align="center" style="padding-left: 20px">
         <h1>Alege un judet pentru a vizualiza statisticele despre somaj</h1>
-        <img src="pics/map.gif" alt="harta" usemap="#harta" width="570" height="404" border="0" />
+        <img src="pics/map.gif" alt="harta" usemap="#harta" width="570" height="404" border="0" class="responsive" />
 
         <map name="harta">
             <area title="Alba"
@@ -153,7 +157,9 @@
         </map>
 
     </div>
-
+    <footer>
+        <span class="footer">Romanian Unemployment Data Visualizer</span>
+    </footer>
 </body>
 
 </html>
