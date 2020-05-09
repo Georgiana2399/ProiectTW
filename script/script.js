@@ -6,3 +6,7 @@ function myFunction() {
     x.className = "navbar";
   }
 }
+
+function myG() {
+  document.getElementById("myDIV").innerHTML = "Hello World";
+}
