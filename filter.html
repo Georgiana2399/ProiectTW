@@ -9,29 +9,34 @@
     <script src="script/script.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="script/pie-charts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>RUnDA</title>
 </head>
 
 
 
 <body>
-    <div class="header">
+    <div id="grad1" class="header">
 
         <span class="logo">RUnDA</span>
         <img class="logo-image" src="pics/logo.png" alt="logo">
         <div class="navbar" id="myNavbar">
+            <a href="javascript:void(0);" style="font-size:15px; text-align: right;" class="close"
+                onclick="myCloseFunction()">&#9747;</a>
             <a href="acasa.html">Acasa</a>
             <a href="somaj.html">Despre somaj</a>
             <a href="statistica.html">Statistica Nationala</a>
             <a href="contact.html">Contact</a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
         </div>
     </div>
+
     <div class="row">
         <div id="demo" class="column left">
             <h2>Filtre</h2>
+            <button class="button button2">Sterge filtre <i class="fa fa-trash-o"></i></button>
 
-            <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
             <div class="custom-select" style="width:400px; height: auto;">
                 <p>Judetul</p>
                 <select>
@@ -84,37 +89,97 @@
             <div class="custom-select" style="width:400px; height: auto;">
                 <form>
                     <label for="minim">Varsta minima:</label>
-                    <input type="number" id="min" name="vmin" min="16" max="75"><br><br>
+                    <input type="number" id="min" name="vmin" min="16" max="75" style="width: 10%;"><br><br>
                     <label for="maxima">Varsta maxima:</label>
-                    <input type="number" id="max" name="vmax" min="16" max="75"><br><br>
+                    <input type="number" id="max" name="vmax" min="16" max="75" style="width: 10%;"><br><br>
                 </form>
             </div>
-            <input type="submit" value="Filtreaza">
+            <!--  <button> <input type="submit" class="button" value="Filtreaza"> <i class="fas fa-filter"></i></button>-->
+            <button class="button button2">Filtreaza<i class="fa fa-filter"></i></button>
         </div>
 
         <div id="myDIV" class="column right">
+            <button class="hide" onclick="myFunctionS()">Filtreaza cautarile</button>
+            <div id='show'>
+                <button class="button button2" onclick="myFunctionS()">Inchide filtru</button>
+                <div class="custom-select" style="width:400px; height: auto;">
+                    <p>Judetul</p>
+                    <select>
+                        <option value="1">Iasi</option>
+                        <option value="2">Vaslui</option>
+                        <option value="3">Citroen</option>
+                        <option value="4">Ford</option>
+                        <option value="5">Honda</option>
+                        <option value="6">Jaguar</option>
+                        <option value="7">Land Rover</option>
+                        <option value="8">Mercedes</option>
+                        <option value="9">Mini</option>
+                        <option value="10">Nissan</option>
+                        <option value="11">Toyota</option>
+                        <option value="12">Volvo</option>
+                    </select>
+                </div>
+
+
+
+
+                <div class="custom-select" style="width:400px; height: auto;">
+                    <p>Sexul</p>
+                    <select>
+                        <option value="n">None</option>
+                        <option value="f">Femei</option>
+                        <option value="b">Barbati</option>
+                    </select>
+                </div>
+
+
+
+
+
+
+                <div class="custom-select" style="width:400px; height: auto;">
+                    <p>Mediul </p>
+                    <select>
+                        <option value="n">None</option>
+                        <option value="u">Urban</option>
+                        <option value="r">Rural</option>
+                    </select>
+                </div>
+
+                <br><br>
+
+
+
+
+                <div class="custom-select" style="width:400px; height: auto;">
+                    <form>
+                        <label for="minim">Varsta minima:</label>
+                        <input type="number" id="min" name="vmin" min="16" max="75" style="width: 10%;"><br><br>
+                        <label for="maxima">Varsta maxima:</label>
+                        <input type="number" id="max" name="vmax" min="16" max="75" style="width: 10%;"><br><br>
+                    </form>
+                </div>
+
+            </div>
+
+
+
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
             <h2>Alege modalitatea de vizualizare:</h2>
-            <button class="button button1 active">Pie</button>
-            <button class="button button1">Bar</button>
+            <button id="pie" class="button button1 active">Pie</button>
+            <button id="bar" style="display:none;" class="button button1">Bar</button>
             <button class="button button1">Donut</button>
             <button class="button button1">Line</button>
-            <button onclick="myG()" class="button button1">Column</button>
-
+            <button id="column" onclick="C()" class="button button1">Column</button>
             <script src="script/active.js"></script>
             <canvas id="myChart"></canvas>
             <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <script src="script/pie-charts.js"></script>
-
-
-</body>
-</div>
-</div>
-
-
-
-
-
-
+            <script src="script/bar-charts.js"></script>
+            <footer>
+                <span id="grad2" class="footer">Romanian Unemployment Data Visualizer</span>
+            </footer>
 
 </body>
 
