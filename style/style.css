@@ -78,6 +78,11 @@ body {
   width: 60px;
   height: auto;
 }
+.center {
+  align: center;
+  align-items: center;
+  padding-left: 20px;
+}
 
 #demo {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
@@ -267,5 +272,14 @@ body {
 }
 
 #show {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #show {
+    display: none;
+  }
+}
+
+.off {
   display: none;
 }

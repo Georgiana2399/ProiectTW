@@ -88,9 +88,9 @@
 
             <div class="custom-select" style="width:400px; height: auto;">
                 <form>
-                    <label for="minim">Varsta minima:</label>
+                    <label for="minimum">Varsta minima:</label>
                     <input type="number" id="min" name="vmin" min="16" max="75" style="width: 10%;"><br><br>
-                    <label for="maxima">Varsta maxima:</label>
+                    <label for="maximum">Varsta maxima:</label>
                     <input type="number" id="max" name="vmax" min="16" max="75" style="width: 10%;"><br><br>
                 </form>
             </div>
@@ -100,7 +100,7 @@
 
         <div id="myDIV" class="column right">
             <button class="hide" onclick="myFunctionS()">Filtreaza cautarile</button>
-            <div id='show'>
+            <div id="show" class="filter">
                 <button class="button button2" onclick="myFunctionS()">Inchide filtru</button>
                 <div class="custom-select" style="width:400px; height: auto;">
                     <p>Judetul</p>
@@ -153,10 +153,10 @@
 
                 <div class="custom-select" style="width:400px; height: auto;">
                     <form>
-                        <label for="minim">Varsta minima:</label>
-                        <input type="number" id="min" name="vmin" min="16" max="75" style="width: 10%;"><br><br>
-                        <label for="maxima">Varsta maxima:</label>
-                        <input type="number" id="max" name="vmax" min="16" max="75" style="width: 10%;"><br><br>
+                        <label for="minimum">Varsta minima:</label>
+                        <input type="number" id="minimum" name="vmin" min="16" max="75" style="width: 10%;"><br><br>
+                        <label for="maximum">Varsta maxima:</label>
+                        <input type="number" id="maximum" name="vmax" min="16" max="75" style="width: 10%;"><br><br>
                     </form>
                 </div>
 
@@ -167,20 +167,31 @@
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
             <h2>Alege modalitatea de vizualizare:</h2>
-            <button id="pie" class="button button1 active">Pie</button>
-            <button id="bar" style="display:none;" class="button button1">Bar</button>
-            <button class="button button1">Donut</button>
-            <button class="button button1">Line</button>
-            <button id="column" onclick="C()" class="button button1">Column</button>
+
+            <button id="pie" class="button button1 active" onclick="Pie()">Pie</button>
+
+
+            <button id="off-bar" class="button button1" onclick="Bar()">Bar</button>
+
+
+            <button id="off-donut" class="button button1" onclick="Donut()">Donut</button>
+
+
+            <button id="off-line" class="button button1" onclick="Line()">Line</button>
+
+
+            <button id="off-column" class="button button1" onclick="Column()">Column</button>
+
+
+
             <script src="script/active.js"></script>
-            <canvas id="myChart"></canvas>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-            <script src="script/pie-charts.js"></script>
-            <script src="script/bar-charts.js"></script>
+
             <footer>
                 <span id="grad2" class="footer">Romanian Unemployment Data Visualizer</span>
             </footer>
+        </div>
 
+    </div>
 </body>
 
 </html>

@@ -30,3 +30,10 @@ function myFunctionS() {
 
   }
 }
+
+function Pie() {
+  document.getElementsByClassName("off").style.display = "block";
+
+}
+
+
