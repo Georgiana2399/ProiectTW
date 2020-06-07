@@ -31,9 +31,53 @@ function myFunctionS() {
   }
 }
 
-function Pie() {
-  document.getElementsByClassName("off").style.display = "block";
+function Show1() {
+  var x = document.getElementById('hide1').style.display;
+  if (x === 'none') {
+    document.getElementById('hide1').style.display = 'block';
+  }
+  else {
+    document.getElementById('hide1').style.display = 'none';
 
+  }
 }
+function Show2() {
+  var x = document.getElementById('hide2').style.display;
+  if (x === 'none') {
+    document.getElementById('hide2').style.display = 'block';
+  }
+  else {
+    document.getElementById('hide2').style.display = 'none';
 
+  }
+}
+function Show3() {
+  var x = document.getElementById('hide3').style.display;
+  if (x === 'none') {
+    document.getElementById('hide3').style.display = 'block';
+  }
+  else {
+    document.getElementById('hide3').style.display = 'none';
 
+  }
+}
+function Show4() {
+  var x = document.getElementById('hide4').style.display;
+  if (x === 'none') {
+    document.getElementById('hide4').style.display = 'block';
+  }
+  else {
+    document.getElementById('hide4').style.display = 'none';
+
+  }
+}
+function Show5() {
+  var x = document.getElementById('hide5').style.display;
+  if (x === 'none') {
+    document.getElementById('hide5').style.display = 'block';
+  }
+  else {
+    document.getElementById('hide5').style.display = 'none';
+
+  }
+}

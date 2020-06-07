@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
+
     <title>RUnDA</title>
 </head>
 
@@ -26,14 +27,14 @@
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </div>
-    <div id="demo" align="center" style=" padding-left: 20px">
+    <div class="demo">
         <h1>Alege un judet pentru a vizualiza statisticele despre somaj</h1>
         <img src="pics/map.gif" alt="harta" usemap="#harta" width="570" height="404" border="0" class="responsive" />
 
         <map name="harta">
             <area title="Alba"
                 coords="150,162,154,150,166,150,171,158,177,154,179,156,190,151,195,156,202,156,204,164,206,164,208,159,224,160,229,168,240,177,235,184,232,185,226,196,221,191,216,196,216,202,209,211,204,212,200,221,203,226,203,234,207,239,202,241,190,227,190,225,191,223,190,221,189,218,190,217,181,193,175,192,173,188,173,180,168,178,164,167,155,167"
-                shape="poly" alt="alba" href="filterfilter.html" />
+                shape="poly" alt="alba" href="filter.html" />
             <area title="Arad"
                 coords="80,137,85,143,92,138,103,138,108,142,113,140,120,144,120,150,129,152,136,163,149,163,154,168,148,168,146,175,136,175,133,187,134,194,123,201,107,194,96,199,96,196,94,194,90,200,76,186,75,187,75,191,72,193,60,190,57,192,55,187,47,186,36,178,37,174,41,172,44,173,48,175,56,175,62,170,64,162,66,162,71,157,66,152,70,148,70,147,69,144,71,143,76,142"
                 shape="poly" alt="arad" href="filter.html" />
@@ -157,9 +158,81 @@
         </map>
 
     </div>
+    <div class="mobile">
+
+        <h1>Alege o regiune pentru a vizualiza statisticele despre somaj </h1>
+        <button class="collapsible">Moldova</button>
+        <div class="content">
+            <a href="filter.html"> Iasi</a>
+            <a href="filter.html"> Vaslui</a>
+            <a href="filter.html"> Bacau</a>
+            <a href="filter.html"> Botosani</a>
+            <a href="filter.html"> Galati</a>
+            <a href="filter.html"> Neamt</a>
+            <a href="filter.html"> Vrancea</a>
+        </div>
+        <button class="collapsible">Muntenia</button>
+        <div class="content">
+            <a href="filter.html"> Arges</a>
+            <a href="filter.html"> Braila</a>
+            <a href="filter.html"> Buzau</a>
+            <a href="filter.html"> Calarasi</a>
+            <a href="filter.html"> Griugiu</a>
+            <a href="filter.html"> Ialomnita</a>
+            <a href="filter.html"> Ilfov</a>
+            <a href="filter.html"> Prahova</a>
+            <a href="filter.html"> Teleorman</a>
+        </div>
+        <button class="collapsible">Oltenia</button>
+        <div class="content">
+            <a href="filter.html"> Dolj</a>
+            <a href="filter.html"> Gorj</a>
+            <a href="filter.html"> Mehedinti</a>
+            <a href="filter.html"> Olt</a>
+            <a href="filter.html"> Valcea</a>
+        </div>
+        <button class="collapsible">Dobrogea</button>
+        <div class="content">
+            <a href="filter.html"> Constanta</a>
+            <a href="filter.html"> Tulcea</a>
+        </div>
+        <button class="collapsible">Transilvania</button>
+        <div class="content">
+            <a href="filter.html"> Alba</a>
+            <a href="filter.html"> Bistrita-Nasaud</a>
+            <a href="filter.html"> Brasov</a>
+            <a href="filter.html"> Cluj</a>
+            <a href="filter.html"> Covasna</a>
+            <a href="filter.html"> Harghita</a>
+            <a href="filter.html"> Hunedoara</a>
+            <a href="filter.html"> Mures</a>
+            <a href="filter.html"> Salaj</a>
+            <a href="filter.html"> Sibiu</a>
+        </div>
+        <button class="collapsible">Banat</button>
+        <div class="content">
+            <a href="filter.html"> Caras-Severin</a>
+            <a href="filter.html"> Timis</a>
+        </div>
+        <button class="collapsible">Crisana</button>
+        <div class="content">
+            <a href="filter.html"> Arad</a>
+            <a href="filter.html"> Bihor</a>
+        </div>
+        <button class="collapsible">Maramures</button>
+        <div class="content">
+            <a href="filter.html"> Satu Mare</a>
+            <a href="filter.html"> Maramures</a>
+        </div>
+        <button class="collapsible">Bucovina</button>
+        <div class="content">
+            <a href="filter.html"> Suceava</a>
+        </div>
+    </div>
     <footer>
-        <span class="footer">reCopyright © Romanian Unemployment Data Visualizer</span>
+        <span class="footer">Copyright © Romanian Unemployment Data Visualizer</span>
     </footer>
 </body>
+<script src="script/collapsible.js"></script>
 
 </html>

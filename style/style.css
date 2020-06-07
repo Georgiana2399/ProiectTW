@@ -78,19 +78,34 @@ body {
   width: 60px;
   height: auto;
 }
-.center {
-  align: center;
-  align-items: center;
-  padding-left: 20px;
-}
 
-#demo {
+.demo {
+  text-align: center;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     5px 5px 15px 5px rgba(255, 200, 219, 0);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     5px 5px 15px 5px rgba(255, 200, 219, 0);
+  padding-left: 20px;
 }
 
+.mobile {
+  align-items: center;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(255, 200, 219, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(255, 200, 219, 0);
+  padding-left: 20px;
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .demo {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    height: 10%;
+  }
+}
 #demoFont {
   font-family: "Times New Roman", Times, serif;
   font-size: 27px;
@@ -105,6 +120,7 @@ body {
 }
 
 .responsive {
+  align-content: center;
   max-width: 100%;
   height: auto;
 }
@@ -281,5 +297,54 @@ body {
 }
 
 .off {
+  display: none;
+}
+
+.collapsible {
+  background-color: #004b64;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active {
+  background-color: #008cba;
+}
+.collapsible:hover {
+  background-color: #025a77;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.content a {
+  font-size: 20px;
+  text-decoration: none;
+  word-spacing: 20px;
+  display: block;
+}
+
+#hide1 {
+  display: none;
+}
+#hide2 {
+  display: none;
+}
+#hide3 {
+  display: none;
+}
+#hide4 {
+  display: none;
+}
+#hide5 {
   display: none;
 }

@@ -1,5 +1,5 @@
 
-// Add active class to the current button (highlight it)
+//highlight the button 
 var header = document.getElementById("myDIV");
 var btns = header.getElementsByClassName("button button1");
 for (var i = 0; i < btns.length; i++) {
