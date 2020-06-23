@@ -146,7 +146,7 @@ body {
 
 .left {
   width: 25%;
-  background: linear-gradient(to bottom, rgb(208, 223, 252), rgb(85, 136, 240));
+  background: #b9cef9;
 }
 
 .right {
@@ -154,22 +154,6 @@ body {
   border: none;
   outline-style: none;
   outline-color: none;
-}
-#grad1 {
-  height: auto;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 0, 0, 0),
-    rgba(255, 0, 0, 1)
-  );
-}
-#grad2 {
-  height: 3%;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 0, 0, 1),
-    rgba(255, 0, 0, 0)
-  );
 }
 
 .button {
@@ -319,7 +303,7 @@ body {
   background-color: #025a77;
 }
 
-.content {
+/*.content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
@@ -332,19 +316,100 @@ body {
   word-spacing: 20px;
   display: block;
 }
+*/
 
 #hide1 {
   display: none;
+  width: 70%;
+  height: 30%;
+  border: 1px solid blue;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  background: #cfc3f8;
+  box-shadow: 10px 10px 5px #888888;
 }
 #hide2 {
   display: none;
+  width: 70%;
+  height: 30%;
+  border: 1px solid blue;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  background: #cfc3f8;
+  box-shadow: 10px 10px 5px #888888;
 }
 #hide3 {
   display: none;
+  width: 70%;
+  height: 30%;
+  border: 1px solid blue;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  background: #cfc3f8;
+  box-shadow: 10px 10px 5px #888888;
 }
 #hide4 {
   display: none;
+  width: 70%;
+  height: 30%;
+  border: 1px solid blue;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  background: #cfc3f8;
+  box-shadow: 10px 10px 5px #888888;
 }
 #hide5 {
   display: none;
+  width: 70%;
+  height: 30%;
+  border: 1px solid blue;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  background: #cfc3f8;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.closem {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closem:hover,
+.closem:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a {
+  text-decoration: none;
 }
