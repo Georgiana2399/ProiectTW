@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "tw runda",
+  "main": "app.js",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "ssl-root-cas": "^1.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "B6",
+  "license": "ISC"
+}

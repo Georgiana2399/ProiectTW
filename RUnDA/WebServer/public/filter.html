@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style/pageStyle.css" />
+  <script src="script/script.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/chartStyle.css">
+  <link rel="stylesheet" type="text/css" href="style/responsive.css">
+  <title>RUnDA</title>
+</head>
+
+<body>
+  <div class="header">
+
+    <span class="logo">RUnDA</span>
+    <div class="navbar" id="myNavbar">
+      <a href="javascript:void(0);" style="font-size:15px; text-align: right;" class="close"
+        onclick="myCloseFunction()">&#9747;</a>
+      <a href="acasa.html">Acasa</a>
+      <a href="somaj.html">Despre somaj</a>
+      <a href="statistica.html">Statistica Nationala</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    </div>
+  </div>
+  <button id="buttonToggleFilters" class="button button2">
+    &times Inchide filtrele
+  </button>
+  <div id="filterColumn" class="filtercolumn">
+    <h2>Filtre</h2>
+
+    <div class="custom-select">
+      <p>Judetul</p>
+      <select id="comboboxJudet">
+        <option value="0">Alba Iulia</option>
+        <option value="1">Arad</option>
+        <option value="2">Argeş</option>
+        <option value="3">Bacău</option>
+        <option value="4">Bihor</option>
+        <option value="5">Bistriţa-Năsăud</option>
+        <option value="6">Botoşani</option>
+        <option value="7">Braşov</option>
+        <option value="8">Brăila</option>
+        <option value="9">Buzău</option>
+        <option value="10">Călăraşi</option>
+        <option value="11">Caraş-Severin</option>
+        <option value="12">Cluj</option>
+        <option value="13">Constanţa</option>
+        <option value="14">Covasna</option>
+        <option value="15">Dâmboviţa </option>
+        <option value="16">Dolj</option>
+        <option value="17">Giurgiu</option>
+        <option value="18">Gorj</option>
+        <option value="19">Harghita</option>
+        <option value="20">Hunedoara</option>
+        <option value="21">Ialomiţa</option>
+        <option value="22">Iaşi</option>
+        <option value="23">Ilfov</option>
+        <option value="24">Maramureş</option>
+        <option value="25">Mehedinţi</option>
+        <option value="26">Mureş</option>
+        <option value="27">Neamţ</option>
+        <option value="28">Olt</option>
+        <option value="29">Prahova</option>
+        <option value="30">Satu Mare</option>
+        <option value="31">Sălaj</option>
+        <option value="32">Sibiu</option>
+        <option value="33">Suceava</option>
+        <option value="34">Teleorman</option>
+        <option value="35">Timiş</option>
+        <option value="36">Tulcea</option>
+        <option value="37">Vaslui</option>
+        <option value="38">Vâlcea</option>
+        <option value="39">Vrancea</option>
+      </select>
+    </div>
+
+    <div class="custom-select">
+      <p>Criteriul de alegere a datelor:</p>
+      <select id="filterCriteria">
+        <option value="m">Dupa mediu de provenienta</option>
+        <option value="e">Dupa nivelul de educatie</option>
+        <option value="v">Dupa varsta</option>
+      </select>
+    </div>
+    <button id="buttonFilter" class="button button2">
+      <i class="fa fa-filter"></i>Filtreaza</i>
+    </button>
+
+    </form>
+  </div>
+
+  <h2>Alege modalitatea de vizualizare:</h2>
+
+  <button id="buttonShowPie" class="button button1">Pie</button>
+  <button id="buttonShowDonut" class="button button1">Donut</button>
+  <button id="buttonShowBar" class="button button1">Columns</button>
+  <button id="buttonShowRows" class="button button1">Rows</button>
+
+  <h6 id="ajaxResponse"></h6>
+  <h6 id="showType">pie</h6>
+
+  <canvas id="myChart"></canvas>
+  
+  <footer>
+    <span class="footer">Romanian Unemployment Data Visualizer</span>
+  </footer>
+  </div>
+  </div>
+</body>
+<script src="script/active.js"></script>
+<script src="script/filter.js"></script>
+<script src="script/chartmin.js"></script>
+<script src="script/responsive.js"></script>
+<script src="filterbuttons.js"></script>
+</html>

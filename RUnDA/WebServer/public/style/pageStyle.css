@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(208, 223, 252);
+}
+/*#region HEADER-NAV BAR*/
+.header {
+  overflow: hidden;
+  background-color: #242582;
+  padding: 20px 10px;
+}
+#showType {
+  display: none;
+}
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header span {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.header .navbar {
+  float: right;
+}
+.header a:hover {
+  background-color: #f64c72;
+  color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.navbar .close {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+/*#endregion*/
+/*#region IGNORE*/
+.logo-image {
+  width: 60px;
+  height: auto;
+}
+
+.mobile {
+  align-items: center;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(255, 200, 219, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(255, 200, 219, 0);
+  padding-left: 20px;
+  display: none;
+}
+/*#endregion*/
+@media screen and (max-width: 600px) {
+  .demo {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    height: 10%;
+  }
+}
+
+.responsive {
+  align-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #242582;
+  color: white;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  border: 10px solid #242582;
+  outline-style: solid;
+  outline-color: invert;
+  background-color: rgb(208, 223, 252);
+}
+
+.left {
+  width: 25%;
+  background: linear-gradient(to bottom, rgb(208, 223, 252), rgb(85, 136, 240));
+}
+.button {
+  background-color: rgb(255, 99, 132);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #004b64;
+}
+
+.button1:hover {
+  background-color: #025a77;
+  color: white;
+}
+.active {
+  background-color: #008cba;
+  color: white;
+}
+
+.button2:hover {
+  background-color: #025a77;
+  color: white;
+}
+
+.column.left.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.hide {
+  display: none;
+  background-color: rgb(255, 99, 132);
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.hide:hover {
+  background-color: #025a77;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .hide .resonsive {
+    float: left;
+    display: block;
+  }
+  .hide {
+    display: block;
+    float: right;
+  }
+}
+
+/* #show {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #show {
+    display: none;
+  }
+} */
+
+.off {
+  display: none;
+}
+
+.collapsible {
+  background-color: #004b64;
+  color: white;
+  cursor: pointer;
+  /* padding: 18px; */
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active {
+  background-color: #008cba;
+}
+.collapsible:hover {
+  background-color: #025a77;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.content a {
+  font-size: 20px;
+  text-decoration: none;
+  word-spacing: 20px;
+  display: block;
+}
+
+#hide1 {
+  display: none;
+}
+#hide2 {
+  display: none;
+}
+#hide3 {
+  display: none;
+}
+#hide4 {
+  display: none;
+}
+#hide5 {
+  display: none;
+}
